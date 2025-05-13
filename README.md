@@ -21,7 +21,7 @@ gitfluence-cli <your-prompt>
 Example:
 
 ```bash
-gitfluence-cli reset whole repo
+gitfluence-cli one-line history
 ```
 
 The tool will fetch a command from the Gitfluence API and ask if you want to execute it.
