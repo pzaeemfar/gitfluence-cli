@@ -32,6 +32,19 @@ func main() {
 
 	// Set request headers
 	req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("accept", "*/*")
+	req.Header.Set("accept-language", "en")
+	req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("origin", "https://www.gitfluence.com")
+	req.Header.Set("priority", "u=1, i")
+	req.Header.Set("Referer", "https://www.gitfluence.com/")
+	req.Header.Set("sec-ch-ua", `"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"`)
+	req.Header.Set("sec-ch-ua-mobile", "?0")
+	req.Header.Set("sec-ch-ua-platform", `"Windows"`)
+	req.Header.Set("sec-fetch-dest", "empty")
+	req.Header.Set("sec-fetch-mode", "cors")
+	req.Header.Set("sec-fetch-site", "same-origin")
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36")
 
 	// Send the request
 	client := &http.Client{}
